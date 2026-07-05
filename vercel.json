@@ -1,12 +1,5 @@
 {
   "version": 2,
-  "name": "skyvault-flight-booking",
-  "builds": [
-    { "src": "*.html", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/$1" }
-  ],
   "headers": [
     {
       "source": "/(.*)",
