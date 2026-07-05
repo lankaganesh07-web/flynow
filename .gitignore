@@ -1,0 +1,45 @@
+# ============================================
+#  SkyVault — .gitignore
+# ============================================
+
+# ---- FIREBASE CONFIG ----
+# firebase-config.js is SAFE to commit.
+# Firebase web API keys are public by design — security is enforced
+# by Firebase Security Rules + domain restrictions (not key secrecy).
+# See: https://firebase.google.com/docs/projects/api-keys
+# firebase-config.js  <-- intentionally NOT blocked
+
+# ---- NODE (if ever added) ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- OS FILES ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- EDITOR / IDE ----
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*~
+
+# ---- ENV FILES ----
+.env
+.env.local
+.env.production
+.env.*
+
+# ---- BUILD OUTPUT ----
+dist/
+build/
+out/
+
+# ---- LOGS ----
+*.log
+logs/
